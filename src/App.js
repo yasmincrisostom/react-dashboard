@@ -7,7 +7,6 @@ import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
 import { Ecommerce, Orders, Calendar, Employees, Stacked,
 Pyramid, Customers, Kanban, Line, Area, Bar, Pie, Financial,
 ColorPicker, ColorMapping, Editor } from "./pages";
-
 import { useStateContext } from './contexts/ContextProvider';
 
 import './App.css';
@@ -42,10 +41,9 @@ const App = () => {
         <div className={
           `dark:bg_main-bg bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-72' : 'flex-2 '}`
         }>
-          <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
-          <Navbar />
+          <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
+            <Navbar />
           </div>
-        </div>
 
         <div>
           <Routes>
@@ -76,6 +74,7 @@ const App = () => {
 
           </Routes>
         </div>
+      </div>
       </div>
       </BrowserRouter>
     </div>
